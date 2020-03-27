@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @baby.name %>
+  <strong>Veces hoy</strong>
+  <%= @baby.feeding_times_today %>
+  <strong>Volumen hoy</strong>
+  <%= @baby.volume_today %>
+  <strong>Ultima vez</strong> 
+  <%= @baby.last_time %>
+</p>
+
+<%= link_to 'Edit', edit_baby_path(@baby) %> |
+<%= link_to 'Back', babies_path %>
+
+
+
+
